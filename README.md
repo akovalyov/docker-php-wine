@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/akovalyov/php-wine:latest.svg)](https://imagelayers.io/?images=akovalyov/php-wine:latest 'Ima kewl badge')
+
 What
 ====
 
