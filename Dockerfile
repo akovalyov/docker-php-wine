@@ -4,7 +4,7 @@ MAINTAINER Andrew Kovalyov <andrew.kovalyoff@gmail.com>
 RUN curl -SL http://windows.php.net/downloads/releases/archives/php-5.4.44-Win32-VC9-x86.zip -o php.zip && \
     unzip php.zip -d php && \
     rm php.zip
-#just call wine once so that it can create its config dir
-RUN wine --version
+COPY php /usr/bin/php
+RUN chmod +x /usr/bin/php
 
-ENTRYPOINT ["wine", "/home/xclient/php/php.exe"]
+ENTRYPOINT ["php"]
