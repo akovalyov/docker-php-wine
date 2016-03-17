@@ -13,4 +13,6 @@ RUN curl -SL http://windows.php.net/downloads/releases/archives/php-5.4.44-Win32
     unzip php.zip -d php && \
     rm php.zip
 
+WORKDIR /home/xclient/.wine/drive_c/php
+
 ENTRYPOINT ["php"]
